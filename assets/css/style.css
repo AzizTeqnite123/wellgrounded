@@ -1,0 +1,1695 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "Aspekta";
+    src: url(../fonts/Aspekta-400.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Aspekta";
+    src: url(../fonts/Aspekta-500.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Aspekta";
+    src: url(../fonts/Aspekta-600.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Aspekta";
+    src: url(../fonts/Aspekta-700.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Aspekta";
+    src: url(../fonts/Aspekta-800.otf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Aspekta";
+    src: url(../fonts/Aspekta-900.otf);
+    font-weight: 900;
+}
+
+body {
+    font-family: "Aspekta";
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* MAIN-BANNER */
+
+.bannerMain {
+    position: relative;
+    background: #F3F6F4;
+}
+
+.bannerMain .container {
+    max-width: 1620px;
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.bannerRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.bannerLeft {
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.eyeBrowText {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "DM Sans", serif;
+}
+
+.eyeBrowText img {
+    width: 32px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.eyeBrowText span {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.83px;
+    letter-spacing: 0%;
+    color: #a27b5c;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+}
+
+.bannerLeft h1 {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    color: #242424;
+    margin: 10px 0;
+}
+
+.bannerLeft p {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28.6px;
+    letter-spacing: 0%;
+    color: #242424;
+    margin: 20px 0;
+    max-width: 500px;
+}
+
+.mainSiteBtn {
+    margin-top: 50px;
+}
+
+.mainSiteBtn a {
+    font-family: "Aspekta";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    padding: 11.5px 30px;
+    border: 1px solid #a27b5c;
+    background-color: #A27B5C;
+    border-radius: 100px;
+    display: block;
+    width: fit-content;
+    text-transform: capitalize;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.mainSiteBtn a:hover {
+    background-color: #000;
+    color: #fff !important;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mainSiteBtn a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #A27B5C;
+    transition: width 0.4s ease, height 0.4s ease, top 0.4s ease, left 0.4s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.mainSiteBtn a:hover::before {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+}
+
+.bannerRight {
+    width: 100%;
+    height: 660px;
+}
+
+.bannerRight img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* MAIN-BANNER */
+
+/* QUALITY-SLIDER */
+
+.qualitySlider {
+    padding: 14px 0;
+    background: #A27B5C;
+}
+
+.qualitySlider .swiper-slide {
+    width: auto;
+}
+
+.qualitySlider .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.quaBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.quaBox::before {
+    background: #FFFFFF;
+    height: 5px;
+    width: 5px;
+    content: '';
+    position: relative;
+    border-radius: 5px;
+}
+
+.quaBox span {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.88px;
+    letter-spacing: 0%;
+    color: #fff;
+}
+
+/* QUALITY-SLIDER */
+
+/* EXPERIENCE-PRODUCTS */
+
+.experinceProducts {
+    margin: 120px 0;
+}
+
+.experinceProducts .siteHeadingHldr .eyeBrowText span {
+    text-align: center;
+    display: block;
+}
+
+.siteHeadingHldr {
+    margin-bottom: 50px;
+}
+
+.siteHeadingHldr h2 {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #242424;
+}
+
+.siteHeadingHldr h3 {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #242424;
+}
+
+.siteHeadingHldr p {
+    font-family: "Aspekta";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #242424;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.experinceProducts .siteHeadingHldr h2 {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.experinceProducts .mainSiteBtn a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expProdRow {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.expProdBox:nth-child(3n + 1) {
+    grid-column: span 6;
+    grid-row: span 2;
+    height: 520px;
+}
+
+.expProdBox img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
+    overflow: hidden;
+}
+
+.expProdBox:nth-child(3n + 2) {
+    grid-column: span 6;
+    grid-row: span 1;
+    height: 250px;
+}
+
+.expProdBox:nth-child(3n + 3) {
+    grid-column: span 6;
+    grid-row: span 1;
+    height: 250px;
+}
+
+.expProdBox {
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.expProdBox:hover::before {
+    opacity: 1;
+    transform: scale(1);
+    background-color: #00000033;
+}
+
+.expProdBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00000033;
+    border-radius: 20px;
+    background-image: url(../img/fourArrrowic.svg);
+    background-size: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(1.3);
+    transition: all ease-in-out 0.3s;
+    z-index: 1;
+}
+
+.expProdBox:hover img {
+    transform: scale(1.1);
+}
+
+/* EXPERIENCE-PRODUCTS */
+
+/* BACKGROUND-IMAGE-SEC */
+
+.imgWithBgSec {
+    height: 562px;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+
+.imgWithBgSec::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #0000004D;
+}
+
+.imgWithBgSecRow {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.imgWithBgSecRow h2 {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: 0%;
+    color: #fff;
+}
+
+.imgWithBgSecRow p {
+    font-family: "Aspekta";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28.6px;
+    letter-spacing: 0%;
+    color: #fff;
+}
+
+/* BACKGROUND-IMAGE-SEC */
+
+/* COLUMN-IMG-CONTENT-SEC */
+
+.clmnImgCntSec {
+    margin: 120px 0;
+}
+
+.clmnImgCntSec.invertedSec {
+    margin: 0;
+    background: #F3F6F4;
+    padding: 80px 0;
+}
+
+.clmnImgCntSec.invertedSec .clmnImgCntSecRow {
+    grid-template-columns: 1fr 1.036fr;
+}
+
+.clmnImgCntSec.invertedSec .clmnImgCntSecContent {
+    order: 1;
+}
+
+.clmnImgCntSec.invertedSec .clmnImgCntSecImg {
+    order: 2;
+}
+
+.clmnImgCntSecRow {
+    display: grid;
+    grid-template-columns: 1.036fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.clmnImgCntSecContent h3 {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: #242424;
+    margin-bottom: 20px;
+}
+
+.clmnImgCntSecContent p {
+    font-family: "Aspekta";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #242424;
+}
+
+.clmnImgCntSecContent ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.clmnImgCntSecContent ul li {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #242424;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.clmnImgCntSecContent ul li::before {
+    content: '';
+    border: 2px solid #A27B5C;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: relative;
+    background-image: url(../img/tickIc.svg);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center center;
+    margin-right: 20px;
+}
+
+.clmnImgCntSecContent ul li strong {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28.6px;
+    letter-spacing: 0%;
+    color: #242424;
+    margin-right: 5px;
+}
+
+.clmnImgCntSecImg {
+    height: 558px;
+    width: 100%;
+}
+
+.clmnImgCntSecImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* COLUMN-IMG-CONTENT-SEC */
+
+/* TACKLE-ROOTS */
+
+.takleRoots {
+    position: relative;
+    background: #F4ECE8;
+    padding: 80px 0;
+}
+
+.container {
+    position: relative;
+}
+
+.takleRootsRow {
+    position: relative;
+    text-align: center;
+}
+
+.takleRoots .eyeBrowText span {
+    text-align: center;
+}
+
+.tackelRootMainImg {
+    width: 661px;
+    height: 570px;
+    margin: 0 auto;
+}
+
+.tackelRootMainImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.circle-tooltip {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    background: #ffffff70;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+    position: relative;
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background: #ffffff8d;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background: #A27B5C;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.tooltipCont {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease, top 0.3s ease;
+    width: 300px;
+    position: absolute;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 10;
+}
+
+.circle-tooltip:hover .tooltipCont {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltipCont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tooltipCont img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+
+.tooltipCont::after {
+    content: '';
+    top: 70px;
+    right: 170px;
+    width: 270px;
+    height: 100px;
+    position: absolute;
+    background: url(../img/topTooltipIc.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.tooltipCont p {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #242424;
+    max-width: 260px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.circle-tooltip.top-tooltip {
+    top: 100px;
+    right: 0%;
+    max-width: 460px;
+    min-width: 460px;
+}
+
+.circle-tooltip.top-tooltip .circle {
+    position: absolute;
+    left: 0;
+}
+
+.circle-tooltip.top-tooltip .tooltipCont {
+    position: absolute;
+    right: 0;
+    top: -160px;
+}
+
+.circle-tooltip.top-tooltip .tooltipCont p {
+    text-align: left;
+}
+
+.circle-tooltip.bottom-tooltip {
+    bottom: 100px;
+    right: 0%;
+    max-width: 460px;
+    min-width: 460px;
+}
+
+.circle-tooltip.bottom-tooltip .circle {
+    position: absolute;
+    left: -40px;
+    bottom: 50px;
+}
+
+.circle-tooltip.bottom-tooltip .tooltipCont {
+    position: absolute;
+    right: 0;
+    bottom: -115px;
+    flex-direction: column-reverse;
+}
+
+.circle-tooltip.bottom-tooltip .tooltipCont p {
+    text-align: left;
+}
+
+.circle-tooltip.bottom-tooltip .tooltipCont::after {
+    transform: scaleY(-1);
+    width: 280px;
+    top: 20px;
+    right: 200px;
+}
+
+
+.circle-tooltip.right-tooltip {
+    top: 36%;
+    left: 33%;
+    max-width: 460px;
+    min-width: 460px;
+}
+
+.circle-tooltip.right-tooltip .circle {
+    position: absolute;
+    left: 0;
+}
+
+.circle-tooltip.right-tooltip .tooltipCont {
+    position: absolute;
+    left: -440px;
+    top: -170px;
+}
+
+.circle-tooltip.right-tooltip .tooltipCont p {
+    text-align: right;
+}
+
+.circle-tooltip.right-tooltip .tooltipCont::after {
+    width: 280px;
+    top: 80px;
+    right: -170px;
+    transform: rotate(45deg);
+}
+
+
+/* TACKLE-ROOTS */
+
+/* ENJOY-SEC */
+
+.enjoySec {
+    margin: 120px 0;
+}
+
+.enjoySec .siteHeadingHldr p {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enjoySec .mainSiteBtn a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enjoyRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.enjoyIconBox {
+    padding: 30px;
+    border: 1px solid #A27B5C;
+    border-radius: 20px;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.enjoyIconBox:hover {
+    background: #F3F6F4;
+    box-shadow: 0px 10px 20px 0px #00000033;
+    border-color: #F3F6F4;
+}
+
+.enjoyIconBox img {
+    height: 64px;
+    width: 64px;
+    object-fit: contain;
+}
+
+.enjoyIconBox h4 {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34.32px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #242424;
+    margin-top: 20px;
+}
+
+.enjoyIconBox p {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #242424;
+    margin-top: 10px;
+}
+
+/* ENJOY-SEC */
+
+/* OUR-PRODUCTS */
+
+.ourProducts {
+    Padding: 80px 0;
+    background: #F3F6F4;
+}
+
+.ourProducts .mainSiteBtn a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ourProducts .eyeBrowText span {
+    text-align: center;
+}
+
+.ourPordRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card-wrapper {
+    border: 1px solid #A27B5C;
+    padding: 14px;
+    border-radius: 20px;
+    position: relative;
+    transition: all ease .3s;
+}
+
+.product-card-wrapper:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px 0px #00000033;
+    border-color: #fff;
+}
+
+.product-card-wrapper:hover .card__inner {
+    box-shadow: 0px 10px 20px 0px #00000033;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card-wrapper:hover .prodCardBtn a {
+    background: #A27B5C;
+}
+
+.product-card-wrapper:hover .prodCardBtn a img {
+    filter: invert(1);
+}
+
+.product-card-wrapper:hover .card__inner .card__media .media {
+    transform: scale(1.05);
+}
+
+.product-card-wrapper:hover .card__inner .card__media img {
+    transform: scale(1.05);
+}
+
+.product-card-wrapper:hover .card__content .card__heading a {
+    color: #a27b5c;
+}
+
+.product-card-wrapper .card__inner {
+    height: 308px;
+    width: 100%;
+    display: block;
+    transition: all ease .3s;
+    position: relative;
+}
+
+.product-card-wrapper .card__inner .card__media::after {
+    background: linear-gradient(143.95deg, rgba(0, 0, 0, 0) 47.34%, rgba(0, 0, 0, 0.2) 96.91%);
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.product-card-wrapper .card__inner .card__media {
+    height: 100%;
+    width: 100%;
+    transition: all ease .3s;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.product-card-wrapper .card__inner .media {
+    height: 100%;
+    width: 100%;
+    transition: all ease .3s;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.product-card-wrapper .card__inner .card__media img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all ease .3s;
+    overflow: hidden;
+}
+
+.prodCardBtn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+}
+
+.prodCardBtn a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all ease .3s;
+}
+
+.prodCardBtn a img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: all ease .3s;
+}
+
+.product-card-wrapper .card__content {
+    margin-top: 20px;
+}
+
+.product-card-wrapper .card__content .card__heading {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #242424;
+}
+
+.product-card-wrapper .card__content .card__heading a {
+    color: #242424;
+}
+
+.product-card-wrapper .card__content .card__heading a::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-card-wrapper .card__content .price__container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.product-card-wrapper .card__content .price__container .price__regular .price-item {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28.6px;
+    letter-spacing: 0%;
+    color: #242424;
+}
+
+.product-card-wrapper .card__content .price__container .price__sale .price-item {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28.6px;
+    letter-spacing: 0%;
+    color: #7e7e7e;
+    text-decoration: line-through;
+}
+
+/* OUR-PRODUCTS */
+
+/* STEP-SEC */
+
+.stepSec {
+    margin: 120px 0;
+}
+
+.stepSec .mainSiteBtn a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.setpSecRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    counter-reset: step;
+}
+
+.stepBox {
+    position: relative;
+    counter-increment: step;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.stepBox:hover .stepImg img {
+    transform: scale(1.05);
+}
+
+/* .stepBox .stepImg::after {
+    content: '';
+    height: 2%;
+    background-image: url(../img/border-line.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 11vw;
+    top: 50%;
+    right: -95%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.stepBox:nth-child(3) .stepImg::after {
+    display: none;
+} */
+
+.stepImg {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    transition: all ease .3s;
+    border-radius: 20px;
+}
+
+.stepImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease .3s;
+}
+
+.stepBox:hover .stepImg::before {
+    color: #FFFFFF1A;
+}
+
+.stepImg::before {
+    content: "0" counter(step);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "Aspekta";
+    font-weight: 650;
+    font-size: 54px;
+    line-height: 77.22px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #A27B5C1A;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    transition: all ease .3s;
+}
+
+.stepBox:hover .stepImg span {
+    background: #A27B5C;
+    color: #fff;
+}
+
+.stepImg span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 800;
+    font-family: "Aspekta";
+    color: #242424;
+    transition: all ease .3s;
+}
+
+.stepBox:hover .stepCnt p {
+    color: #A27B5C;
+}
+
+.stepCnt {
+    margin-top: 20px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stepCnt p {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #242424;
+}
+
+/* STEP-SEC */
+
+/* TWO-BOX */
+
+.twoBox {
+    padding: 80px 0 40px;
+    background: #F4ECE8;
+}
+
+.twoBoxRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.twoBxPr {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.twoBxPr img {
+    height: 424px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.twoBxPr h4 {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34.32px;
+    letter-spacing: 0%;
+    color: #242424;
+    margin-top: 10px;
+}
+
+.twoBxPr p {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #242424;
+    max-width: 95%;
+}
+
+/* TWO-BOX */
+
+/* WONDERING */
+
+.wondering {
+    padding: 40px 0 80px;
+    background: #F4ECE8;
+}
+
+.wondRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 70px;
+}
+
+.wondBox {
+    background: #FFFFFF;
+    max-width: 300px;
+    padding: 30px;
+    padding-top: 120px;
+    border-radius: 20px;
+    position: relative;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.wondBox:hover {
+    background: #a27b5c;
+    box-shadow: 0px 10px 20px 0px #a27b5c73;
+}
+
+.wondBox:hover img {
+    transform: translateX(-50%) scale(0.85);
+}
+
+.wondBox:hover h5 {
+    color: #ffffff;
+}
+
+.wondBox:hover p {
+    color: #ffffff;
+}
+
+.wondBox img {
+    height: 160px;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all ease .3s;
+}
+
+.wondBox h5 {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #242424;
+    text-align: center;
+}
+
+.wondBox p {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #242424;
+    margin-top: 10px;
+    text-wrap: balance;
+}
+
+/* WONDERING */
+
+/* TESTIMONIAL-SEC */
+
+.testimonialSec {
+    margin: 120px 0;
+}
+
+.testimonialSec .siteHeadingHldr {
+    padding: 0 20px;
+}
+
+.testimonialSec .swiper {
+    padding-bottom: 50px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonialSec .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.testimonialSec .swiper .swiper-slide {
+    max-width: 488px;
+    width: auto;
+}
+
+.testiBox {
+    padding: 30px;
+    border: 1px solid #A27B5C;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.testiBox:hover {
+    background: #F3F6F4;
+    box-shadow: 0px 10px 20px 0px #00000033;
+    border-color: #ffffff;
+}
+
+.testiBox:hover img {
+    filter: invert(1) brightness(0.1);
+}
+
+.testiBox img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    transition: all ease .1s;
+}
+
+.testiBox p {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #242424;
+    margin: 10px 0;
+}
+
+.testiBox .testiLine {
+    margin: 20px 0;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, #DBDBDB 0%, rgba(219, 219, 219, 0) 100%);
+}
+
+.testiBox .authTest {
+    padding: 5.5px 19.5px;
+    border: 1px solid #242424;
+    border-radius: 100px;
+    display: block;
+    width: fit-content;
+    font-family: "Aspekta";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #242424;
+}
+
+.swiper-pagination {
+    bottom: 0 !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: #A27B5C !important;
+    height: 12px !important;
+    width: 78px !important;
+    border-radius: 100px !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid #A27B5C;
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+}
+
+/* TESTIMONIAL-SEC */
+
+/* OUR-BLOG-ROW */
+
+.ourBlogMain {
+    margin: 120px 0;
+}
+
+.ourBlogMain .mainSiteBtn a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ourBlogRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.article-card-wrapper {
+    position: relative;
+    transition: all ease .3s;
+}
+
+.article-card-wrapper:hover .card__inner .article-card__image img {
+    transform: scale(1.05);
+}
+
+.article-card-wrapper .card__inner {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    transition: all ease .3s;
+    border-radius: 20px;
+}
+
+.article-card-wrapper .card__inner .article-card__image {
+    height: 100%;
+    width: 100%;
+    transition: all ease .3s;
+    border-radius: 20px;
+}
+
+.article-card-wrapper .card__inner .article-card__image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: all ease .3s;
+}
+
+.article-card-wrapper .card__content {
+    margin-top: 20px;
+}
+
+.blog-info-user ul {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.blog-info-user ul li {
+    font-family: "Aspekta";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20.02px;
+    letter-spacing: 0%;
+    color: #7e7e7e;
+}
+
+.blog-info-user ul li:nth-child(1) {
+    order: 1;
+}
+
+.blog-info-user ul li:nth-child(2) {
+    order: 3;
+}
+
+.blog-info-user ul::after {
+    content: '';
+    position: relative;
+    order: 2;
+    background: #A27B5C;
+    height: 4px;
+    width: 4px;
+    border-radius: 4px;
+}
+
+.article-card-wrapper .card__content .card__heading {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34.32px;
+    letter-spacing: 0%;
+    color: #242424;
+    margin-top: 5px;
+    transition: all ease .3s;
+}
+
+.article-card-wrapper:hover .card__content .card__heading a {
+    color: #A27B5C;
+}
+
+.article-card-wrapper .card__content .card__heading a {
+    color: #242424;
+}
+
+.article-card-wrapper .card__content .card__heading a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.articleDesc P {
+    margin-top: 10px;
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #242424;
+}
+
+/* OUR-BLOG-ROW */
+
+/* FOOTER-MAIN */
+
+.footerMain {
+    background: #A27B5C1A;
+}
+
+.footerMain .container {
+    position: relative;
+    padding: 133px 0 30px;
+}
+
+.footTopRow {
+    display: grid;
+    grid-template-columns: 40% 16% 16% 23%;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.footLogo {
+    height: 145px;
+    width: 145px;
+    display: block;
+    position: absolute;
+    top: -72px;
+    left: 0;
+    z-index: 2;
+}
+
+.footLogo a {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.footLogo a img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.footerNewsLatter h3,
+.footLinks h3 {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28.6px;
+    letter-spacing: 0%;
+    color: #242424;
+    margin-bottom: 20px;
+}
+
+.footerNewsLatter p {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0%;
+    color: #242424;
+    margin-top: 15px;
+}
+
+.footerForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.inputHldr input {
+    width: 100%;
+    height: 44px;
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20.02px;
+    letter-spacing: 0%;
+    color: #242424;
+    padding: 12px 16px;
+    border: 1px solid #242424;
+    border-radius: 100px;
+    background: transparent;
+    outline: none;
+}
+
+.inputHldr input::placeholder {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20.02px;
+    letter-spacing: 0%;
+    color: #242424;
+}
+
+.inputHldr:has(input[type=submit]) {
+    grid-column: span 2;
+}
+
+.inputHldr input[type=submit] {
+    background: #A27B5C;
+    color: #fff;
+    border-color: #A27B5C;
+    cursor: pointer;
+}
+
+.footLinks {
+    display: block;
+    margin-left: auto;
+}
+
+.footLinks ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footLinks ul li a {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #242424;
+}
+
+.footBotRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 30px;
+    border-radius: 100px;
+    background: #fff;
+}
+
+.ftBtLft p {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20.02px;
+    letter-spacing: 0%;
+    color: #242424;
+    max-width: 320px;
+}
+
+.ftBtLft p a{
+    color: #242424;text-decoration: underline;font-weight: 600;
+}
+
+.ftBtMid {
+    display: flex;
+    gap: 10px;
+}
+
+.ftBtMid img{
+    width: 40px;
+    height: 29px;
+    object-fit: contain;
+}
+
+.ftBtRit ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ftBtRit ul::before{
+    content: '';
+    width: 2px;
+    height: 23px;
+    position: relative;
+    background: #242424;
+    order: 2;
+}
+
+.ftBtRit ul li a {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20.02px;
+    letter-spacing: 0%;
+    color: #242424;
+}
+
+.ftBtRit ul li:nth-child(1){
+    order: 1;
+}
+
+.ftBtRit ul li:nth-child(2){
+    order: 3;
+}
+
+/* FOOTER-MAIN */
