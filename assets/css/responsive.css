@@ -1,0 +1,57 @@
+@media only screen and (max-width: 1220px) {
+    /* HOME-PAGE */
+
+    .bannerLeft h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .bannerLeft p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .bannerRight {
+        height: 600px;
+    }
+
+    .experinceProducts {
+        margin: 100px 0;
+    }
+
+    .imgWithBgSec {
+        height: 500px;
+    }
+
+    .clmnImgCntSec {
+        margin: 100px 0;
+    }
+
+    .clmnImgCntSecContent ul li {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .clmnImgCntSecContent ul li strong {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .enjoySec {
+        margin: 100px 0;
+    }
+
+    .stepSec {
+        margin: 100px 0;
+    }
+
+    .stepBox::after {
+        right: -6.2vw;
+    }
+
+    .footTopRow {
+        grid-template-columns: 36% 16% 16% 24%;
+    }
+
+    /* HOME-PAGE */
+}

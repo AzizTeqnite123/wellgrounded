@@ -162,6 +162,7 @@ img {
     background-color: #000;
     color: #fff !important;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-color: #000;
 }
 
 .mainSiteBtn a::before {
@@ -1037,22 +1038,22 @@ img {
     transform: scale(1.05);
 }
 
-/* .stepBox .stepImg::after {
+.stepBox::after {
     content: '';
     height: 2%;
     background-image: url(../img/border-line.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 11vw;
-    top: 50%;
-    right: -95%;
+    width: 10.4vw;
+    top: 40%;
+    right: -5.9vw;
     transform: translateY(-50%);
     position: absolute;
 }
 
-.stepBox:nth-child(3) .stepImg::after {
+.stepBox:nth-child(3)::after {
     display: none;
-} */
+}
 
 .stepImg {
     height: 200px;
@@ -1364,6 +1365,7 @@ img {
     height: 12px !important;
     width: 78px !important;
     border-radius: 100px !important;
+    transition: all ease 0.3s ;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -1510,12 +1512,13 @@ img {
 
 .footerMain .container {
     position: relative;
-    padding: 133px 0 30px;
+    padding-top: 133px ;
+    padding-bottom: 30px;
 }
 
 .footTopRow {
     display: grid;
-    grid-template-columns: 40% 16% 16% 23%;
+    grid-template-columns: 37% 17% 17% 24%;
     gap: 20px;
     padding-bottom: 100px;
 }
@@ -1526,7 +1529,7 @@ img {
     display: block;
     position: absolute;
     top: -72px;
-    left: 0;
+    left: 20px;
     z-index: 2;
 }
 
@@ -1623,6 +1626,30 @@ img {
     line-height: 18px;
     letter-spacing: 0%;
     color: #242424;
+    position: relative;
+}
+
+.footLinks ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.footLinks ul li a:hover {
+    color: #a27b5c;
+    transform: scale(1);
+}
+
+.footLinks ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #A27B5C;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
 }
 
 .footBotRow {
@@ -1645,8 +1672,10 @@ img {
     max-width: 320px;
 }
 
-.ftBtLft p a{
-    color: #242424;text-decoration: underline;font-weight: 600;
+.ftBtLft p a {
+    color: #242424;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 .ftBtMid {
@@ -1654,7 +1683,7 @@ img {
     gap: 10px;
 }
 
-.ftBtMid img{
+.ftBtMid img {
     width: 40px;
     height: 29px;
     object-fit: contain;
@@ -1666,7 +1695,7 @@ img {
     gap: 10px;
 }
 
-.ftBtRit ul::before{
+.ftBtRit ul::before {
     content: '';
     width: 2px;
     height: 23px;
@@ -1682,13 +1711,37 @@ img {
     line-height: 20.02px;
     letter-spacing: 0%;
     color: #242424;
+    position: relative;
 }
 
-.ftBtRit ul li:nth-child(1){
+.ftBtRit ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.ftBtRit ul li a:hover {
+    color: #a27b5c;
+    transform: scale(1);
+}
+
+.ftBtRit ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #A27B5C;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.ftBtRit ul li:nth-child(1) {
     order: 1;
 }
 
-.ftBtRit ul li:nth-child(2){
+.ftBtRit ul li:nth-child(2) {
     order: 3;
 }
 
