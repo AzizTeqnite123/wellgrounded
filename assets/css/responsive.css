@@ -832,5 +832,9 @@
         margin: 60px 0;
     }
 
+    .stepBox::after {
+        transform: scale(1.2);
+    }
+
     /* HOME-PAGE */
 }
