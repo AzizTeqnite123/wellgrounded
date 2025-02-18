@@ -53,7 +53,7 @@ img {
     display: block;
 }
 
-.container {
+.container, .page-width {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 20px;
@@ -1691,7 +1691,8 @@ body .swiper .swiper-button-next::after {
 }
 
 .footBotRow {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1720,12 +1721,17 @@ body .swiper .swiper-button-next::after {
 .ftBtMid {
     display: flex;
     gap: 10px;
+    justify-content: end;
 }
 
 .ftBtMid img {
     width: 40px;
     height: 29px;
     object-fit: contain;
+}
+
+.ftBtRit {
+    margin-left: auto;
 }
 
 .ftBtRit ul {

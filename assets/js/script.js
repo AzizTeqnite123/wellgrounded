@@ -8,6 +8,9 @@ const qualitySlider = new Swiper(".qualitySlide", {
     },
     speed: 3000,
     breakpoints: {
+        300: {
+            spaceBetween: 20,
+        },
         576: {
             spaceBetween: 40,
         },
@@ -158,6 +161,10 @@ const prodSlides = new Swiper(".prodSlides", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     }, breakpoints: {
+        300: {
+            spaceBetween: 10,
+            slidesPerView: 1.2,
+        },
         576: {
             spaceBetween: 15,
             slidesPerView: 2,

@@ -1,0 +1,388 @@
+@media only screen and (max-width : 575px) {
+    /* HOME-PAGE */
+
+    .container,
+    .page-width {
+        padding: 0 15px;
+    }
+
+    .bannerRow {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .bannerMain {
+        padding: 80px 0 40px;
+    }
+
+    .bannerMain .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bannerRight {
+        height: 300px;
+    }
+
+    .bannerRight img {
+        border-radius: 10px;
+    }
+
+    .eyeBrowText span {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .eyeBrowText img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .bannerLeft h1 {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .bannerLeft p {
+        font-size: 14px;
+        line-height: 19px;
+        margin: 15px 0;
+    }
+
+    .mainSiteBtn {
+        margin-top: 20px;
+    }
+
+    .mainSiteBtn a {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 10px 20px;
+    }
+
+    .qualitySlider {
+        padding: 10px 0;
+    }
+
+    .quaBox span {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .siteHeadingHldr h2 {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    .siteHeadingHldr {
+        margin-bottom: 25px;
+    }
+
+    .expProdRow {
+        gap: 10px;
+    }
+
+    .expProdBox {
+        grid-column: span 12 !important;
+        height: 250px !important;
+    }
+
+    .expProdBox img,
+    .expProdBox,
+    .expProdBox::before {
+        border-radius: 10px;
+    }
+
+    .expProdBox::before {
+        background-size: 30px;
+    }
+
+    .experinceProducts {
+        margin: 40px 0;
+    }
+
+    .imgWithBgSec {
+        height: max-content;
+    }
+
+    .imgWithBgSecRow h2 {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    .imgWithBgSecRow p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .clmnImgCntSec {
+        margin: 40px 0;
+    }
+
+    .clmnImgCntSecImg img {
+        border-radius: 10px;
+    }
+
+    .clmnImgCntSecImg {
+        height: 250px;
+    }
+
+    .clmnImgCntSecContent h3 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .clmnImgCntSecContent ul li::before {
+        height: 16px;
+        width: 16px;
+        min-width: 16px;
+        margin-right: 10px;
+    }
+
+    .clmnImgCntSecContent ul li strong {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .clmnImgCntSecContent ul li {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .takleRoots {
+        padding: 40px 0;
+    }
+
+    .tooltipCont img {
+        height: 45px;
+        width: 45px;
+    }
+
+    .tooltipCont {
+        gap: 10px;
+    }
+
+    .tooltipCont p {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .circle-tooltip.bottom-tooltip .circle {
+        left: 325px;
+        bottom: 60px;
+    }
+
+    .circle-tooltip.bottom-tooltip .tooltipCont::after {
+        right: 92px;
+        top: -90px;
+        height: 80px;
+        transform: scale(1.5);
+    }
+
+    .circle-tooltip.bottom-tooltip .tooltipCont {
+        right: 30px;
+        bottom: -110px;
+    }
+
+    .takleRootsRow {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .circle-tooltip.top-tooltip .circle {
+        left: 180px;
+        bottom: -100px;
+    }
+
+    .circle-tooltip.top-tooltip .tooltipCont {
+        right: 0;
+        top: -130px;
+    }
+
+    .circle-tooltip.top-tooltip {
+        top: 120px;
+        right: 0%;
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    .tooltipCont::after {
+        content: '';
+        top: 110px;
+        right: 106px;
+        transform: scale(1.1);
+    }
+
+    .circle-tooltip.right-tooltip .circle {
+        left: -50px;
+        top: 70px;
+    }
+
+    .circle-tooltip.right-tooltip .tooltipCont {
+        left: -100px;
+        top: -90px;
+    }
+
+    .circle-tooltip.right-tooltip .tooltipCont::after {
+        height: 80px;
+        top: 85px;
+        transform: scale(1.5);
+        right: 44px;
+    }
+
+    .enjoySec {
+        margin: 40px 0;
+    }
+
+    .siteHeadingHldr p {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .enjoyRow {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .enjoyIconBox {
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .enjoyIconBox p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .enjoyIconBox h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .enjoyIconBox img {
+        height: 34px;
+        width: 34px;
+    }
+
+    .product-card-wrapper .card__inner {
+        height: 220px;
+    }
+
+    .product-card-wrapper {
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .product-card-wrapper .card__inner .card__media,
+    .product-card-wrapper .card__inner .media,
+    .product-card-wrapper .card__inner .card__media img,
+    .product-card-wrapper .card__inner .card__media::after {
+        border-radius: 5px;
+    }
+
+    .ourProducts {
+        padding: 40px 0;
+    }
+
+    .product-card-wrapper .card__content .card__heading {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .product-card-wrapper .card__content .price__container .price__regular .price-item,
+    .product-card-wrapper .card__content .price__container .price__sale .price-item {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .product-card-wrapper .card__content {
+        margin-top: 15px;
+    }
+
+    .ourPordRow .swiper {
+        padding-bottom: 30px;
+    }
+
+    .prodCardBtn {
+        height: 34px;
+        width: 34px;
+    }
+
+    .prodCardBtn a {
+        padding: 6px;
+    }
+
+    .stepSec {
+        margin: 40px 0;
+    }
+
+    .setpSecRow {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .stepImg img {
+        border-radius: 10px;
+    }
+
+    .stepImg {
+        border-radius: 10px;
+    }
+
+    .stepCnt {
+        margin-top: 12px;
+    }
+
+    .stepCnt p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .stepImg span {
+        height: 40px;
+        width: 40px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .stepImg::before {
+        font-size: 28px;
+    }
+
+    .twoBox {
+        padding: 40px 0 20px;
+    }
+
+    .twoBxPr img {
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    .twoBxPr h4 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 8px;
+    }
+
+    .twoBxPr {
+        gap: 10px;
+    }
+
+    .twoBxPr p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .wondering {
+        padding: 20px 0 40px;
+    }
+
+    .siteHeadingHldr h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    /* HOME-PAGE */
+}
