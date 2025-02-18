@@ -1,30 +1,4 @@
-const qualitySlider = new Swiper(".qualitySlide", {
-    slidesPerView: "auto",
-    spaceBetween: 100,
-    loop: true,
-    autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-    },
-    speed: 3000,
-    breakpoints: {
-        300: {
-            spaceBetween: 20,
-        },
-        576: {
-            spaceBetween: 40,
-        },
-        769: {
-            spaceBetween: 60,
-        },
-        1024: {
-            spaceBetween: 80,
-        },
-        1200: {
-            spaceBetween: 100,
-        }
-    }
-});
+// FANCY-BOX
 
 Fancybox.bind("[data-fancybox]", {
     Thumbs: {
@@ -39,143 +13,108 @@ Fancybox.bind("[data-fancybox]", {
     },
 });
 
-var swiper = new Swiper(".testiSlider", {
-    slidesPerView: "auto",
-    spaceBetween: 20,
-    centeredSlides: true,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
+// FANCY-BOX
 
+// TOOL-TIPS PROD
 
-// const observeTooltips = () => {
-//     // Target the container section that needs to be in view
-//     const section = document.querySelector('.takleRoots');
+document.addEventListener('DOMContentLoaded', function () {
+    gsap.registerPlugin(ScrollTrigger);
 
-//     // Get all the tooltips within the section
-//     const tooltips = document.querySelectorAll('.circle-tooltip');
+    const tooltips = document.querySelectorAll('.circle-tooltip');
 
-//     // Options for the Intersection Observer
-//     const options = {
-//         root: null, // null means the viewport
-//         rootMargin: '0px',
-//         threshold: 0.5 // trigger when 50% of the section is visible
-//     };
+    const animateTooltips = () => {
+        tooltips.forEach((tooltip, index) => {
+            const tooltipContent = tooltip.querySelector('.tooltipCont');
 
-//     // Track if the user is actively scrolling
-//     let isScrolling = false;
-
-//     // When user is scrolling, mark it
-//     window.addEventListener('scroll', () => {
-//         isScrolling = true;
-//         // Reset the scroll activity status after a delay (let's say 100ms)
-//         clearTimeout(isScrolling);
-//         setTimeout(() => {
-//             isScrolling = false;
-//         }, 100);
-//     });
-
-//     // Callback function to be executed when the section is in view
-//     const callback = (entries, observer) => {
-//         entries.forEach(entry => {
-//             // If the section is in view
-//             if (entry.isIntersecting) {
-//                 // Loop through each tooltip and apply animation for showing
-//                 tooltips.forEach((tooltip, index) => {
-//                     const tooltipContent = tooltip.querySelector('.tooltipCont');
-
-//                     // Only show tooltips when user is actively scrolling
-//                     if (isScrolling) {
-//                         setTimeout(() => {
-//                             tooltipContent.style.visibility = 'visible';
-//                             tooltipContent.style.opacity = '1';
-//                             tooltipContent.style.transition = `opacity 0.5s ease ${index * 0.2}s`; // Delay based on index
-//                         }, index * 300); // Delay in milliseconds between each tooltip
-//                     }
-//                 });
-//             } else {
-//                 // When the section is out of view (scroll away), hide the tooltips
-//                 tooltips.forEach((tooltip, index) => {
-//                     const tooltipContent = tooltip.querySelector('.tooltipCont');
-
-//                     // Apply staggered hiding with a delay to create the "line-by-line" effect
-//                     setTimeout(() => {
-//                         tooltipContent.style.visibility = 'hidden';
-//                         tooltipContent.style.opacity = '0';
-//                         tooltipContent.style.transition = `opacity 0.5s ease ${index * 0.2}s`; // Delay based on index
-//                     }, index * 300); // Delay in milliseconds between each tooltip
-//                 });
-//             }
-//         });
-//     };
-
-//     // Initialize the Intersection Observer
-//     const observer = new IntersectionObserver(callback, options);
-
-//     // Start observing the section
-//     observer.observe(section);
-// };
-
-// // Run the function to observe tooltips
-// observeTooltips();
-
-
-gsap.registerPlugin(ScrollTrigger);
-
-const tooltips = document.querySelectorAll('.circle-tooltip');
-
-
-const animateTooltips = () => {
-    tooltips.forEach((tooltip, index) => {
-        const tooltipContent = tooltip.querySelector('.tooltipCont');
-
-        gsap.fromTo(tooltipContent, {
-            opacity: 0,
-
-            visibility: 'hidden',
-        }, {
-            opacity: 1,
-            visibility: 'visible',
-            duration: 0.3,
-            delay: index * 0.1,
-            ease: 'power2.out',
-            scrollTrigger: {
-                trigger: tooltip,
-                start: "top 90%",
-                end: "bottom top",
-                scrub: true,
-                markers: false,
-                toggleActions: "play none none reverse",
-            }
+            gsap.fromTo(tooltipContent, {
+                opacity: 0,
+                visibility: 'hidden',
+            }, {
+                opacity: 1,
+                visibility: 'visible',
+                duration: 0.3,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: tooltip,
+                    start: "top 90%",
+                    end: "bottom top",
+                    scrub: true,
+                    markers: false,
+                    toggleActions: "play none none reverse",
+                }
+            });
         });
-    });
-};
+    };
 
-animateTooltips();
-
-const prodSlides = new Swiper(".prodSlides", {
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    }, breakpoints: {
-        300: {
-            spaceBetween: 10,
-            slidesPerView: 1.2,
-        },
-        576: {
-            spaceBetween: 15,
-            slidesPerView: 2,
-        },
-        769: {
-            spaceBetween: 20,
-            slidesPerView: 3,
-        },
-        1025: {
-            spaceBetween: 20,
-            slidesPerView: 4,
-        },
-    }
+    animateTooltips();
 });
+
+// TOOL-TIPS PROD
+
+
+// SCRIPT FOR ACCORDIANS FAQS
+
+document.addEventListener('DOMContentLoaded', function () {
+    function faqsAccordion() {
+        var accordionSections = document.querySelectorAll(".faq__accordion");
+
+        accordionSections.forEach(section => {
+            var accordionItemHeaders = section.querySelectorAll(".accordion-item-header");
+
+            if (accordionItemHeaders.length > 0) {
+                var firstAccordionItemHeader = accordionItemHeaders[0];
+                var firstAccordionItemBody = firstAccordionItemHeader.nextElementSibling;
+
+                firstAccordionItemHeader.classList.add("active");
+                firstAccordionItemBody.style.maxHeight = firstAccordionItemBody.scrollHeight + "px";
+            }
+
+            accordionItemHeaders.forEach(accordionItemHeader => {
+                accordionItemHeader.addEventListener("click", event => {
+                    var accordionItemBody = accordionItemHeader.nextElementSibling;
+
+                    accordionItemHeaders.forEach(item => {
+                        if (item !== accordionItemHeader) {
+                            item.classList.remove("active");
+                            item.nextElementSibling.style.maxHeight = 0;
+                        }
+                    });
+
+                    accordionItemHeader.classList.toggle("active");
+
+                    if (accordionItemHeader.classList.contains("active")) {
+                        accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                    } else {
+                        accordionItemBody.style.maxHeight = 0;
+                    }
+                });
+            });
+        });
+    }
+
+    faqsAccordion();
+});
+
+// SCRIPT FOR ACCORDIANS FAQS
+
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// const tl = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: '.stepSec',
+//         start: 'top center',
+//         end: 'bottom center',
+//         scrub: 1,
+//         markers: false
+//     }
+// });
+
+// tl.from('.stepBox', {
+//     opacity: 0,
+//     y: 30,
+//     duration: 0.5,
+//     stagger: 0.2,
+//     ease: 'power2.out'
+// });

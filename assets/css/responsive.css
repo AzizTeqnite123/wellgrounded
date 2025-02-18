@@ -1,7 +1,8 @@
 @media only screen and (max-width: 1220px) {
     /* HOME-PAGE */
 
-    .bannerLeft h1 {
+    .bannerLeft h1,
+    .innBanHead {
         font-size: 48px;
         line-height: 56px;
     }
@@ -66,7 +67,28 @@
         margin: 100px 0;
     }
 
+    .downloadNow {
+        margin: 100px 0;
+    }
+
     /* HOME-PAGE */
+
+    /* FAQS-PAGE */
+
+    .faqSMain {
+        margin: 100px 0;
+    }
+
+    /* FAQS-PAGE */
+
+    /* CONTACT-PAGE */
+
+    .containMain {
+        margin: 100px 0;
+    }
+
+    /* CONTACT-PAGE */
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -96,7 +118,8 @@
         height: 28px;
     }
 
-    .bannerLeft h1 {
+    .bannerLeft h1,
+    .innBanHead {
         font-size: 42px;
         line-height: 48px;
     }
@@ -508,7 +531,109 @@
         padding-bottom: 80px;
     }
 
+    .clmnImgCntSecContent ul li {
+        padding-left: 40px;
+    }
+
+    .downloadNow {
+        margin: 80px 0;
+        padding: 60px 0;
+    }
+
+    .dnldNowRow {
+        gap: 20px;
+    }
+
+    .dnldseCimg {
+        height: 500px;
+    }
+
+    .dnldseCcnt h3 {
+        font-size: 29px;
+        line-height: 35px;
+    }
+
+    .dnldFiELDHldr {
+        margin-top: 20px;
+    }
+
+    .DnldFielD input {
+        height: 45px;
+    }
+
+    .DnldFielD button {
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 20px;
+    }
+
+    .dnldseCimg img {
+        border-radius: 15px;
+    }
+
     /* HOME-PAGE */
+
+    /* FAQS-PAGE */
+
+    .faqSMain {
+        margin: 80px 0;
+    }
+
+    .accordion-item {
+        border-radius: 15px;
+    }
+
+    .accordion-item-header,
+    .accordion-item-body-content {
+        padding: 20px;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .accordion-item-header::after {
+        right: 20px;
+    }
+
+    .innerBanner {
+        padding: 90px 0 50px;
+    }
+
+    /* FAQS-PAGE */
+
+    /* CONTACT-PAGE */
+
+    .containMain {
+        margin: 80px 0;
+    }
+
+    .field label {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .field input,
+    .field textarea {
+        height: 45px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .field textarea {
+        height: 200px;
+    }
+
+    .field button {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 12px 30px;
+    }
+
+    /* CONTACT-PAGE */
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -532,7 +657,8 @@
         height: 24px;
     }
 
-    .bannerLeft h1 {
+    .bannerLeft h1,
+    .innBanHead {
         font-size: 35px;
         line-height: 40px;
     }
@@ -886,7 +1012,99 @@
         padding-bottom: 60px;
     }
 
+    .dnldNowRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .dnldseCimg {
+        height: 400px;
+    }
+
+    .DnldFielD button {
+        margin-top: 10px;
+    }
+
+    .downloadNow {
+        margin: 60px 0;
+        padding: 50px 0;
+    }
+
+    .dnldseCcnt h3 {
+        font-size: 25px;
+        line-height: 30px;
+        max-width: 500px;
+    }
+
+    .DnldFielD input {
+        height: 40px;
+    }
+
     /* HOME-PAGE */
+
+    /* FAQS-PAGE */
+
+    .faqSMain {
+        margin: 60px 0;
+    }
+
+    .accordion-item-header,
+    .accordion-item-body-content {
+        padding: 15px;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .accordion-item-header::after {
+        right: 15px;
+        height: 14px;
+        width: 14px;
+    }
+
+    .innerBanner {
+        padding: 80px 0 40px;
+    }
+
+    .faq__accordion {
+        gap: 15px;
+    }
+
+    .accordion-item-body-content p:not(:first-child) {
+        margin-top: 15px;
+    }
+
+    /* FAQS-PAGE */
+
+    /* CONTACT-PAGE */
+
+    .containMain {
+        margin: 60px 0;
+    }
+
+    .our_fields__hLDR {
+        gap: 15px;
+    }
+
+    .field label {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .field input,
+    .field textarea {
+        height: 40px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .field textarea {
+        height: 150px;
+    }
+
+    /* CONTACT-PAGE */
+
 }
 
 @media only screen and (max-width : 575px) {
@@ -929,7 +1147,8 @@
         height: 18px;
     }
 
-    .bannerLeft h1 {
+    .bannerLeft h1,
+    .innBanHead {
         font-size: 30px;
         line-height: 33px;
     }
@@ -972,9 +1191,17 @@
         gap: 10px;
     }
 
-    .expProdBox {
-        grid-column: span 12 !important;
-        height: 250px !important;
+    .expProdBox:nth-child(3n + 1) {
+        grid-column: span 12;
+        height: 260px;
+    }
+
+    .expProdBox:nth-child(3n + 2) {
+        height: 130px;
+    }
+
+    .expProdBox:nth-child(3n + 3) {
+        height: 130px;
     }
 
     .expProdBox img,
@@ -1038,6 +1265,7 @@
     .clmnImgCntSecContent ul li {
         font-size: 12px;
         line-height: 15px;
+        padding-left: 30px;
     }
 
     .takleRoots {
@@ -1045,8 +1273,8 @@
     }
 
     .tooltipCont img {
-        height: 45px;
-        width: 45px;
+        height: 60px;
+        width: 60px;
     }
 
     .tooltipCont {
@@ -1101,7 +1329,7 @@
 
     .tooltipCont::after {
         content: '';
-        top: 110px;
+        top: 102px;
         right: 106px;
         transform: scale(1.1);
     }
@@ -1282,7 +1510,7 @@
 
     .wondRow {
         padding-top: 30px;
-        gap: 40px;
+        gap: 50px;
     }
 
     .wondBox h5,
@@ -1295,6 +1523,10 @@
         padding: 15px;
         padding-top: 40px;
         border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        width: 100%;
     }
 
     .wondBox img {
@@ -1432,13 +1664,13 @@
 
     .inputHldr input {
         height: 35px;
-        font-size: 12px;
-        line-height: 12px;
+        font-size: 14px;
+        line-height: 14px;
     }
 
     .inputHldr input::placeholder {
-        font-size: 12px;
-        line-height: 12px;
+        font-size: 14px;
+        line-height: 14px;
     }
 
     .footTopRow {
@@ -1497,5 +1729,139 @@
         height: 20px;
     }
 
+    .ourPordRow .swiper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .downloadNow {
+        margin: 40px 0;
+        padding: 40px 0;
+    }
+
+    .dnldseCimg {
+        height: 250px;
+    }
+
+    .dnldseCimg img {
+        border-radius: 10px;
+    }
+
+    .dnldseCcnt h3 {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+
+    .DnldFielD label,
+    .DnldFielD input {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .DnldFielD input {
+        height: 36px;
+    }
+
+    .dnldFiELDHldr {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .DnldFielD button {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 10px 20px;
+    }
+
     /* HOME-PAGE */
+
+    /* FAQS-PAGE */
+
+    .innerBanner {
+        padding: 60px 0 30px;
+    }
+
+    .faqSMain {
+        margin: 40px 0;
+    }
+
+    .accordion-item-header,
+    .accordion-item-body-content {
+        padding: 13px;
+    }
+
+    .faq__accordion {
+        gap: 10px;
+    }
+
+    .accordion-item {
+        border-radius: 10px;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .accordion-item-header::after {
+        right: 13px;
+        height: 9px;
+        width: 13px;
+    }
+
+    .accordion-item-body-content p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .accordion-item-body-content p:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    /* FAQS-PAGE */
+
+    /* CONTACT-PAGE */
+
+    .containMain {
+        margin: 40px 0;
+    }
+
+    .our_fields__hLDR {
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .field:has(textarea),
+    .field:has(button) {
+        grid-column: span 1;
+    }
+
+    .field label {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .field input,
+    .field textarea {
+        height: 36px;
+        font-size: 14px;
+        line-height: 18px;
+        border-radius: 5px;
+    }
+
+    .field textarea {
+        height: 100px;
+    }
+
+    .field button {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 10px 25px;
+    }
+
+    /* CONTACT-PAGE */
+
 }

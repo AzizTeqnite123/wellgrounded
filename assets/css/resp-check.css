@@ -38,7 +38,8 @@
         height: 18px;
     }
 
-    .bannerLeft h1 {
+    .bannerLeft h1,
+    .innBanHead {
         font-size: 30px;
         line-height: 33px;
     }
@@ -81,9 +82,17 @@
         gap: 10px;
     }
 
-    .expProdBox {
-        grid-column: span 12 !important;
-        height: 250px !important;
+    .expProdBox:nth-child(3n + 1) {
+        grid-column: span 12;
+        height: 260px;
+    }
+
+    .expProdBox:nth-child(3n + 2) {
+        height: 130px;
+    }
+
+    .expProdBox:nth-child(3n + 3) {
+        height: 130px;
     }
 
     .expProdBox img,
@@ -129,6 +138,7 @@
     .clmnImgCntSecContent h3 {
         font-size: 20px;
         line-height: 23px;
+        margin-bottom: 10px;
     }
 
     .clmnImgCntSecContent ul li::before {
@@ -146,6 +156,7 @@
     .clmnImgCntSecContent ul li {
         font-size: 12px;
         line-height: 15px;
+        padding-left: 30px;
     }
 
     .takleRoots {
@@ -153,8 +164,8 @@
     }
 
     .tooltipCont img {
-        height: 45px;
-        width: 45px;
+        height: 60px;
+        width: 60px;
     }
 
     .tooltipCont {
@@ -209,7 +220,7 @@
 
     .tooltipCont::after {
         content: '';
-        top: 110px;
+        top: 102px;
         right: 106px;
         transform: scale(1.1);
     }
@@ -384,5 +395,364 @@
         line-height: 25px;
     }
 
+    .wondRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .wondRow {
+        padding-top: 30px;
+        gap: 50px;
+    }
+
+    .wondBox h5,
+    .wondBox p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .wondBox {
+        padding: 15px;
+        padding-top: 40px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .wondBox img {
+        height: 60px;
+        width: 60px;
+        top: -30px;
+    }
+
+    .wondBox p {
+        margin-top: 5px;
+    }
+
+    .testimonialSec {
+        margin: 40px 0;
+    }
+
+    .testiBox {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .testiBox img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .testiBox p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .testiBox .testiLine {
+        margin: 14px 0;
+    }
+
+    .testiBox .authTest {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 5px 15px;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+        width: 30px !important;
+        height: 8px !important;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        height: 8px;
+        width: 8px;
+    }
+
+    .testimonialSec .swiper {
+        padding-bottom: 40px;
+    }
+
+    .testimonialSec .swiper .swiper-slide {
+        max-width: 300px;
+    }
+
+    .clmnImgCntSecContent p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .clmnImgCntSec.invertedSec {
+        padding: 40px 0;
+    }
+
+    .ourBlogMain {
+        margin: 40px 0;
+    }
+
+    .ourBlogRow {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .article-card-wrapper .card__inner .article-card__image img,
+    .article-card-wrapper .card__inner .article-card__image,
+    .article-card-wrapper .card__inner {
+        border-radius: 10px;
+    }
+
+    .article-card-wrapper .card__inner {
+        height: 200px;
+    }
+
+    .blog-info-user ul li {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .article-card-wrapper .card__content .card__heading {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 8px;
+    }
+
+    .articleDesc P {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .footTopRow {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .footerNewsLatter {
+        grid-column: span 1;
+    }
+
+    .stepBox::after {
+        display: none;
+    }
+
+    .footerMain .container {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .footLogo {
+        height: 80px;
+        width: 80px;
+        top: -45px;
+        left: 15px;
+    }
+
+    .footerNewsLatter h3,
+    .footLinks h3 {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 15px;
+    }
+
+    .inputHldr input {
+        height: 35px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .inputHldr input::placeholder {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .footTopRow {
+        padding-bottom: 40px;
+    }
+
+    .footLinks ul {
+        gap: 8px;
+    }
+
+    .footLinks ul li a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .footBotRow {
+        border-radius: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .ftBtMid {
+        grid-column: span 1;
+    }
+
+    .ftBtLft p {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .ftBtRit {
+        margin-right: auto;
+    }
+
+    .ftBtRit ul {
+        gap: 6px;
+    }
+
+    .ftBtRit ul::before {
+        width: 1px;
+        height: 16px;
+    }
+
+    .ftBtRit ul li a {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .ftBtMid {
+        gap: 5px;
+    }
+
+    .ftBtMid img {
+        width: 30px;
+        height: 20px;
+    }
+
+    .ourPordRow .swiper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .downloadNow {
+        margin: 40px 0;
+        padding: 40px 0;
+    }
+
+    .dnldseCimg {
+        height: 250px;
+    }
+
+    .dnldseCimg img {
+        border-radius: 10px;
+    }
+
+    .dnldseCcnt h3 {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+
+    .DnldFielD label,
+    .DnldFielD input {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .DnldFielD input {
+        height: 36px;
+    }
+
+    .dnldFiELDHldr {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .DnldFielD button {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 10px 20px;
+    }
+
     /* HOME-PAGE */
+
+    /* FAQS-PAGE */
+
+    .innerBanner {
+        padding: 60px 0 30px;
+    }
+
+    .faqSMain {
+        margin: 40px 0;
+    }
+
+    .accordion-item-header,
+    .accordion-item-body-content {
+        padding: 13px;
+    }
+
+    .faq__accordion {
+        gap: 10px;
+    }
+
+    .accordion-item {
+        border-radius: 10px;
+    }
+
+    .accordion-item-header h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .accordion-item-header::after {
+        right: 13px;
+        height: 9px;
+        width: 13px;
+    }
+
+    .accordion-item-body-content p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .accordion-item-body-content p:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    /* FAQS-PAGE */
+
+    /* CONTACT-PAGE */
+
+    .containMain {
+        margin: 40px 0;
+    }
+
+    .our_fields__hLDR {
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .field:has(textarea),
+    .field:has(button) {
+        grid-column: span 1;
+    }
+
+    .field label {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .field input,
+    .field textarea {
+        height: 36px;
+        font-size: 14px;
+        line-height: 18px;
+        border-radius: 5px;
+    }
+
+    .field textarea {
+        height: 100px;
+    }
+
+    .field button {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 10px 25px;
+    }
+
+    /* CONTACT-PAGE */
+
 }

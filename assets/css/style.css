@@ -53,7 +53,8 @@ img {
     display: block;
 }
 
-.container, .page-width {
+.container,
+.page-width {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 20px;
@@ -113,7 +114,8 @@ img {
     width: 100%;
 }
 
-.bannerLeft h1 {
+.bannerLeft h1,
+.innBanHead {
     font-family: "Aspekta";
     font-weight: 600;
     font-size: 52px;
@@ -121,6 +123,10 @@ img {
     letter-spacing: 0%;
     color: #242424;
     margin: 10px 0;
+}
+
+.innBanHead {
+    margin: 0 !important;
 }
 
 .bannerLeft p {
@@ -485,8 +491,7 @@ img {
     letter-spacing: 0%;
     color: #242424;
     position: relative;
-    display: flex;
-    align-items: center;
+    padding-left: 50px;
 }
 
 .clmnImgCntSecContent ul li::before {
@@ -496,7 +501,9 @@ img {
     width: 25px;
     min-width: 25px;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
     background-image: url(../img/tickIc.svg);
     background-repeat: no-repeat;
     background-size: 10px;
@@ -1248,7 +1255,7 @@ body .swiper .swiper-button-next::after {
 .wondBox {
     background: #FFFFFF;
     max-width: 300px;
-    padding: 30px;
+    padding: 30px 20px;
     padding-top: 120px;
     border-radius: 20px;
     position: relative;
@@ -1352,7 +1359,7 @@ body .swiper .swiper-button-next::after {
     border-color: #ffffff;
 }
 
-.testiBox:hover img {
+.testiBox:hover .testiLine .testiBox:hover img {
     filter: invert(1) brightness(0.1);
 }
 
@@ -1371,6 +1378,10 @@ body .swiper .swiper-button-next::after {
     letter-spacing: 0%;
     color: #242424;
     margin: 10px 0;
+}
+
+.testiBox:hover .testiLine {
+    background: linear-gradient(90deg, #A27B5C 0%, rgba(162, 123, 92, 0) 100%);
 }
 
 .testiBox .testiLine {
@@ -1403,7 +1414,7 @@ body .swiper .swiper-button-next::after {
     height: 12px !important;
     width: 78px !important;
     border-radius: 100px !important;
-    transition: all ease 0.3s;
+    transition: all ease-in-out 0.4s;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -1742,7 +1753,7 @@ body .swiper .swiper-button-next::after {
 
 .ftBtRit ul::before {
     content: '';
-    width: 2px;
+    width: 1px;
     height: 23px;
     position: relative;
     background: #242424;
@@ -1791,3 +1802,292 @@ body .swiper .swiper-button-next::after {
 }
 
 /* FOOTER-MAIN */
+
+/* INNER-BANNER */
+
+.innerBanner {
+    padding: 110px 0 60px;
+    background: #F3F6F4;
+}
+
+/* INNER-BANNER */
+
+/* FAQS-MAIN */
+
+.faqSMain {
+    margin: 120px 0;
+}
+
+.faqsMainRow {
+    max-width: 996px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.faq__accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accordion-item {
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid #A27B5C;
+    cursor: pointer;
+}
+
+.accordion-item:has(.active) {
+    background: #A27B5C1A;
+    border-color: transparent;
+}
+
+.accordion-item-header {
+    padding: 30px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-item-header::after {
+    content: "";
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    background-image: url(../img/faqopenic.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 16px;
+    width: 16px;
+    transition: all ease-in-out .3s;
+}
+
+.accordion-item-header.active::after {
+    content: "";
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.accordion-item-header h5 {
+    font-family: "Aspekta";
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31.46px;
+    letter-spacing: 0%;
+    color: #242424;
+}
+
+.acc-item-head {
+    max-width: 91%;
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-item-body-content {
+    padding: 30px;
+    padding-top: 0 !important;
+}
+
+.accordion-item-body-content p {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0%;
+    color: #242424;
+    max-width: 91%;
+}
+
+.accordion-item-body-content p:not(:first-child) {
+    margin-top: 20px;
+}
+
+.accordion-item:has(.active) .accordion-item-body {
+    max-height: max-content;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* FAQS-MAIN */
+
+/* OUR-CONTACT */
+
+.containMain {
+    margin: 120px 0;
+}
+
+.contcMainRow {
+    max-width: 996px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.our_fields__hLDR {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.field {
+    position: relative;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.field label {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28.6px;
+    letter-spacing: 0%;
+    color: #575356;
+}
+
+.field input,
+.field textarea {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28.6px;
+    letter-spacing: 0%;
+    color: #575356;
+    height: 51px;
+    border: 1px solid #A27B5C;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.field input:focus,
+.field textarea:focus {
+    background: #A27B5C1A;
+}
+
+.field:has(textarea),
+.field:has(button) {
+    grid-column: span 2;
+}
+
+.field textarea {
+    height: 226px;
+    resize: vertical;
+}
+
+.field button {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background: #A27B5C;
+    padding: 13px 39.5px;
+    border-radius: 100px;
+    font-family: "Aspekta";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #A27B5C;
+}
+
+/* OUR-CONTACT */
+
+/* DOWNLOAD-NEWSLETTER */
+
+.downloadNow {
+    margin: 120px 0;
+    padding: 80px 0;
+    background: #F3F6F4;
+}
+
+.dnldNowRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.dnldseCimg {
+    width: 100%;
+    height: 558px;
+}
+
+.dnldseCimg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.dnldseCcnt h3 {
+    font-family: "Aspekta";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: #242424;
+    margin-bottom: 15px;
+}
+
+.dnldFiELDHldr {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 488px;
+    gap: 20px;
+}
+
+.DnldFielD {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.DnldFielD label {
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.88px;
+    letter-spacing: 0%;
+    color: #242424;
+}
+
+.DnldFielD input {
+    border: 1px solid #A27B5C;
+    background: #A27B5C1A;
+    border-radius: 10px;
+    font-family: "Aspekta";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.88px;
+    letter-spacing: 0%;
+    color: #242424;
+    height: 50px;
+    outline: none;
+    padding: 10px;
+}
+
+.DnldFielD button {
+    margin-top: 30px;
+    background: #A27B5C;
+    padding: 11.5px 29.5px;
+    border-radius: 100px;
+    font-family: "Aspekta";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.74px;
+    letter-spacing: 0%;
+    color: #fff;
+    width: fit-content;
+    border: 1px solid #A27B5C;
+    cursor: pointer;
+}
+
+/* DOWNLOAD-NEWSLETTER */
