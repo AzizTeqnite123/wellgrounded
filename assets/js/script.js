@@ -101,20 +101,4 @@ document.addEventListener('DOMContentLoaded', function () {
 // SCRIPT FOR ACCORDIANS FAQS
 
 
-const tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.stepSec',
-        start: 'top 50%',
-        end: 'bottom 60%',
-        scrub: 1,
-    }
-});
-
-tl.from('.stepBox', {
-    opacity: 0,
-    y: 30,
-    duration: 0.6, 
-    stagger: 0.2,  
-    ease: 'power2.out'
-});
 

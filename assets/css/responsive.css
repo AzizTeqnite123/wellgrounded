@@ -1,3 +1,9 @@
+@media only screen and (min-width: 1800px){
+    .testimonialSec .swiper .swiper-slide {
+        max-width: 700px;
+    }
+}
+
 @media only screen and (max-width: 1220px) {
     /* HOME-PAGE */
 

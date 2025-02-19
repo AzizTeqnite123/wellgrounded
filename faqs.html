@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>FAQ’s</title>
 </head>
 
@@ -19,7 +20,7 @@
 
     <section class="innerBanner">
         <div class="container">
-            <div class="innBanRow">
+            <div class="innBanRow" data-aos="fade-right" data-aos-duration="400" data-aos-offset="0">
                 <h1 class="innBanHead">FAQ’s</h1>
             </div>
         </div>
@@ -29,7 +30,7 @@
 
     <!-- FAQS-MAIN -->
 
-    <section class="faqSMain">
+    <section class="faqSMain" data-aos="fade-up" data-aos-duration="400" data-aos-offset="0">
         <div class="container">
             <div class="faqsMainRow">
                 <div class="faq__accordion">
@@ -455,7 +456,7 @@
                             <input type="email" placeholder="Email">
                         </div>
                         <div class="inputHldr">
-                            <input type="submit" placeholder="Submit">
+                            <button type="submit">Submit</button>
                         </div>
                     </form>
                     <p>By providing my email address, I agree to receiving marketing emails from Well Grounded Home. You
@@ -512,10 +513,12 @@
 
     <!-- FOOTER-MAIN -->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/slider.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>
