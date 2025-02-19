@@ -1,3 +1,5 @@
+AOS.init();
+
 // FANCY-BOX
 
 Fancybox.bind("[data-fancybox]", {
@@ -99,22 +101,20 @@ document.addEventListener('DOMContentLoaded', function () {
 // SCRIPT FOR ACCORDIANS FAQS
 
 
-// gsap.registerPlugin(ScrollTrigger);
+const tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.stepSec',
+        start: 'top 50%',
+        end: 'bottom 60%',
+        scrub: 1,
+    }
+});
 
-// const tl = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: '.stepSec',
-//         start: 'top center',
-//         end: 'bottom center',
-//         scrub: 1,
-//         markers: false
-//     }
-// });
+tl.from('.stepBox', {
+    opacity: 0,
+    y: 30,
+    duration: 0.6, 
+    stagger: 0.2,  
+    ease: 'power2.out'
+});
 
-// tl.from('.stepBox', {
-//     opacity: 0,
-//     y: 30,
-//     duration: 0.5,
-//     stagger: 0.2,
-//     ease: 'power2.out'
-// });

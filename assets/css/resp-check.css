@@ -553,7 +553,8 @@
         margin-bottom: 15px;
     }
 
-    .inputHldr input {
+    .inputHldr input,
+    .inputHldr button {
         height: 35px;
         font-size: 14px;
         line-height: 14px;
@@ -655,7 +656,7 @@
     }
 
     .dnldFiELDHldr {
-        gap: 15px;
+        gap: 10px;
         margin-top: 20px;
     }
 
