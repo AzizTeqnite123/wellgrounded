@@ -61,6 +61,11 @@ img {
     width: 100%;
 }
 
+::selection {
+    color: #000000be;
+    background: #a27b5c7c;
+}
+
 /* MAIN-BANNER */
 
 .bannerMain {
@@ -83,7 +88,7 @@ img {
 }
 
 .bannerLeft {
-    max-width: 560px;
+    max-width: 590px;
     margin-left: auto;
     margin-right: 0;
     padding-top: 20px;
@@ -173,7 +178,7 @@ img {
     position: absolute;
     z-index: -1;
     background: #000;
-    height: 150px;
+    height: 110px;
     width: 300%;
     border-radius: 50%;
 }
@@ -218,6 +223,7 @@ img {
 }
 
 .qualitySlider .swiper-wrapper {
+    transition-delay: 0s !important;
     transition-timing-function: linear !important;
 }
 
@@ -763,6 +769,35 @@ img {
     transform: rotate(45deg);
 }
 
+.circle-tooltip.left-bottom-tooltip {
+    max-width: 460px;
+    min-width: 460px;
+    bottom: 175px;
+    left: 35%;
+}
+
+.circle-tooltip.left-bottom-tooltip .circle {
+    position: absolute;
+    left: 0;
+}
+
+.circle-tooltip.left-bottom-tooltip .tooltipCont {
+    position: absolute;
+    left: -457px;
+    top: 0px;
+    flex-direction: column-reverse;
+}
+
+.circle-tooltip.left-bottom-tooltip .tooltipCont p {
+    text-align: center;
+}
+
+.circle-tooltip.left-bottom-tooltip .tooltipCont::after {
+    width: 280px;
+    top: 14px;
+    right: -174px;
+    transform: rotate(180deg);
+}
 
 /* TACKLE-ROOTS */
 
@@ -1424,7 +1459,8 @@ body .swiper .swiper-button-next::after {
     border: 1px solid #A27B5C;
     opacity: 1;
     height: 12px;
-    width: 12px;    transition: all ease-in-out 0.4s;
+    width: 12px;
+    transition: all ease-in-out 0.4s;
 }
 
 /* TESTIMONIAL-SEC */
@@ -1924,7 +1960,8 @@ body .swiper .swiper-button-next::after {
 }
 
 .acc-item-head {
-    max-width: 91%;
+    max-width: 96%;
+    padding-right: 15px;
 }
 
 .accordion-item-body {
@@ -1945,7 +1982,8 @@ body .swiper .swiper-button-next::after {
     line-height: 23px;
     letter-spacing: 0%;
     color: #242424;
-    max-width: 91%;
+    max-width: 96%;
+    padding-right: 15px;
 }
 
 .accordion-item-body-content p:not(:first-child) {
